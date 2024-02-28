@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Linq;
 using Nuke.Common.Tooling;
 
-[TypeConverter(typeof(TypeConverter<Configuration>))]
+[TypeConverter(typeof(TypeConverter<Configuration>))]//augh
 public class Configuration : Enumeration
 {
     public static Configuration Debug = new Configuration { Value = nameof(Debug) };
