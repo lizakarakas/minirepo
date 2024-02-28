@@ -23,7 +23,7 @@ public class Configuration : Enumeration
             rawVersionLine)
     {
     }
-
+//good
     private ReleaseNotes(Version version, SemVersion semVersion, IEnumerable<string> notes, string rawVersionLine)
     {
         Version = version ?? throw new ArgumentNullException(nameof(version));
