@@ -11,10 +11,7 @@ public class Configuration : Enumeration
 
     public static implicit operator string(Configuration configuration)
     {
-        return configuration.Value;
-    }
-}
-
+ 
     public ReleaseNotes(Version version, IEnumerable<string> notes, string rawVersionLine)
         : this(
             version ?? throw new ArgumentNullException(nameof(version)),
